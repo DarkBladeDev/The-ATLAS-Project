@@ -1,0 +1,193 @@
+*{
+
+    margin: 0;
+    padding: 0;
+
+}
+
+.top-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.navbar {
+    background-color: #333; 
+    justify-content: center; 
+    align-items: center;
+    position: sticky;  
+    display: flex;
+    padding: 20px 50px;
+}
+
+.box-top {
+    display: flex;   
+    text-align: center;
+    font-weight: bold; 
+
+}
+
+.con-box{
+    justify-content: center; 
+    align-items: center;
+    display: flex;  
+    flex-direction: column;
+    
+}
+ 
+.navbar h1{
+    display: flex;  
+    font-size: 24px;
+    text-align: center; 
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    transition: color 0.3s ease;
+    cursor: pointer;  
+}
+
+.navbar ul { 
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar ul li {
+    margin-right: 20px;
+    transition: color 0.3s ease;
+    cursor: pointer;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    transition: color 0.3s ease;
+    position: relative;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+.navbar ul li a:hover{ 
+    color: #f1c40f;
+    background-color: #333;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+ 
+
+.logo { 
+    background-image: url('../img/ATLAS-logo.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    display: flex;
+    width: 100px;
+    height: 100px; 
+    transition: background-color 0.3s ease; 
+    cursor: pointer; 
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%; 
+}
+ 
+
+.bottom-container > * {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.bottom-container {
+    margin-bottom: 30px;
+}
+
+ /* CSS para los productos */ 
+
+ .product-container{   
+    justify-content: center;
+    text-align: center;
+    padding: 20px; 
+}
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+}
+.product {
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    overflow: hidden;
+    margin-bottom: 20px;
+    max-width: 100%;
+}
+
+.product ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.product ul li {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #666;
+    text-decoration: none;
+    transition: color 0.3s;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.product:hover{
+    transform: scale(1.1);
+}
+
+/* CSS para el footer */
+footer {
+    background-color: #666;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    margin-top: 30px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+footer i {
+    padding: 5px;
+    font-size: 25px;
+    margin-right: 10px;
+    color: #ccc;
+    transition: color 0.1s ease;
+    cursor: pointer;
+    transform: rotate(0deg);
+    animation: rotate 4s infinite linear;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+
+}
