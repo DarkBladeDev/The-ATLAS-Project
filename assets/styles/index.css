@@ -141,6 +141,11 @@
     max-width: 100%;
 }
 
+.product > img {
+    width: 230px;
+    height: 200px;
+}
+
 .product ul {
     list-style-type: none;
     padding: 0;
